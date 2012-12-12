@@ -1,0 +1,175 @@
+/*  
+Theme Name: Simple
+Theme URI: http://www.calvinwang.com/
+Description: This is simple theme.
+Version: 1.0
+Author: Calvin Wang
+Author URI: http://www.calvinwang.com/
+*/
+
+body {
+	margin: 0;
+	font-family: "Lucida Grande","Lucida Sans Unicode",Arial,Verdana,sans-serif;
+	font-size: 12px;
+	text-align: center;
+	vertical-align: top;
+	background: #FFFFFF;
+	color: #000000;
+}
+
+body, h1, h2, h3, h4, h5, h6, blockquote, p,form {
+	margin: 0;
+	padding: 0;
+}
+
+h1 {
+	font-size: 24px;
+	padding: 0 0 10px 0;
+}
+
+#wrapper {
+	margin: 0 auto;
+	width: 960px;
+	text-align: left;
+}
+
+a:link, a:visited {
+	text-decoration: none;
+	color: #000000;
+}
+
+a:hover {
+	text-decoration: none;
+	color: #CC0000;
+}
+
+p {
+	padding: 10px 0 0 0;
+}
+
+/*
+----- header -----
+*/
+
+#header {
+	float: left;
+	width: 960px;
+}
+
+/*
+----- container -----
+*/
+
+#container {
+	float: left;
+	width: 690px;
+}
+
+.post {
+	padding: 10px 0
+}
+
+.post h2 {
+	font-size: 18px;
+}
+
+.entry {
+	line-height: 18px;
+}
+
+p.postmetadata {
+	border-top: 1px solid #ccc;
+	margin: 10px 0 0 0;
+}
+
+.comments {
+	margin: 10px 0 0;
+	border-top: 1px solid #ccc;
+	padding: 10px 0 0;
+}
+
+.comments ol {
+	margin: 0;
+	padding: 0 0 15px;
+	list-style: none;
+}
+
+.comments ol li {
+	margin: 10px 0 0;
+	line-height: 18px;
+	padding: 0 0 10px;
+	border-bottom: 1px solid #ccc;
+}
+
+.comments h2, .comments h3 {
+	font-size: 16px;
+}
+
+.commentmetadata {
+	font-size: 12px;
+}
+
+.comments p.nocomments {
+	padding: 0;
+}
+
+.comments textarea {
+	font-size: 12px;
+}
+
+.navi {
+	padding: 10px 0 0 0;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+/*
+----- sidebar -----
+*/
+
+.sidebar {
+	float: left;
+	width: 260px;
+	background: #EEEEEE;
+	margin: 0 0 0 10px;
+	display: inline;
+}
+
+.sidebar ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0 10px;
+}
+
+.sidebar ul li {
+	padding: 10px 0;
+}
+
+.sidebar ul li h2 {
+	font-size: 14px;
+}
+
+.sidebar ul ul li {
+	padding: 0;
+	line-height: 24px;
+}
+
+/*
+----- footer -----
+*/
+
+#footer {
+	clear: both;
+	float: right;
+	width: 960px;
+	margin: 10px 0 0 0;
+}
+
+#footer p {
+	line-height: 18px;
+}
+
+/*
+----- header -----
+*/
