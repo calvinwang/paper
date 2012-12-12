@@ -21,7 +21,8 @@
 <body>
 	<div id="wrapper">
 
-		<div id="header">
-			<h1><a href="<?php bloginfo("url"); ?>"><?php bloginfo("name"); ?></a></h1>
-			<?php bloginfo("description"); ?>
+		<div id="header" class="clearfix">
+			<a id="logo" href="<?php bloginfo("url"); ?>">
+				<h1><?php bloginfo("name"); ?></h1>
+			</a>
 		</div>
