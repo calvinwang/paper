@@ -14,7 +14,6 @@ Author URI: http://www.calvinwang.com/
 body {
 	font-family: "Helvetica Neue", Helvetica, "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
 	font-size: 18px;
-	font-weight: lighter;
 	background: #FFFFFF;
 	color: #666666;
 }
@@ -22,6 +21,7 @@ body {
 body, h1, h2, h3, h4, h5, h6, blockquote, p, form {
 	margin: 0;
 	padding: 0;
+	font-weight: lighter;
 }
 
 h1 {
@@ -48,12 +48,18 @@ p {
 	text-align: left;
 }
 
+.bottom_border {
+	margin: 0 0 20px;
+	padding: 0 0 20px;
+	border-bottom: 1px solid #E5E5E5;
+}
+
 /*
 ----- header -----
 */
 
 #header {
-	margin: 0 0 100px;
+	margin: 0 0 20px;
 }
 
 #logo {
@@ -73,7 +79,7 @@ p {
 
 #container {
 	clear: both;
-	margin: 0 0 100px;
+	margin: 0 0 60px;
 }
 
 .post {
@@ -82,41 +88,63 @@ p {
 
 .post h2 {
 	font-size: 24px;
-	margin: 0 0 30px;
+	margin: 0 0 10px;
 }
 
-.post p {
-	text-indent: 2em;
+.post .date {
+	margin: 0 0 30px;
+	color: #AAAAAA;
 }
 
 .entry {
+	margin: 0 0 100px;
+}
+
+.entry p {
+	text-indent: 2em;
 	line-height: 30px;
+}
+
+/*
+----- comments -----
+*/
+
+.commentmetadata {
+	margin: 0 0 5px;
+}
+
+.commentlist {
+	font-size: 14px;
+	line-height: 20px;
+	margin: 0 0 60px;
+}
+
+.commentlist li {
+	margin: 0 0 20px;
 }
 
 /*
 ----- navi -----
 */
 
-#navi {
-	margin: 100px 0;
-}
-
-#navi a {
-	padding: 10px 20px;
-}
-
-#navi a:hover {
-	color: #FFFFFF;
-	background: #CC0000;
-	border-radius: 2px;
-}
-
-.next {
+.navi .previous {
+	margin: 0 0 100px -20px;
 	float: left;
 }
 
-.previous {
+.navi .next {
+	margin: 0 -20px 60px 0;
 	float: right;
+}
+
+.navi a {
+	padding: 10px 20px;
+	color: #AAAAAA;
+}
+
+.navi a:hover {
+	background: #EEEEEE;
+	border-radius: 2px;
 }
 
 /*
@@ -124,8 +152,9 @@ p {
 */
 
 #footer {
-	margin: 0 0 20px;
-	color: #999999;
+	padding: 10px 0;
+	color: #BBBBBB;
+	border-top: 1px solid #E5E5E5;
 }
 
 /*

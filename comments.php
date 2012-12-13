@@ -20,7 +20,7 @@ $oddcomment = 'alt';
 <!-- You can start editing here. -->
 
 <?php if ($comments) : ?>
-	<h3 id="comments"><?php comments_number('No Responses', 'One Response', '% Responses' );?> to &#8220;<?php the_title(); ?>&#8221;</h3>
+	<h3 id="comments" class="bottom_border"><?php comments_number('No Comments', '1 Comment', '% Comments' );?></h3>
 
 <ol class="commentlist">
 <?php foreach ($comments as $comment) : ?>
@@ -28,7 +28,7 @@ $oddcomment = 'alt';
 	<li class="<?php echo $oddcomment; ?>" id="comment-<?php comment_ID() ?>">
 
 <div class="commentmetadata">
-<strong><?php comment_author_link() ?></strong>, <?php _e('on'); ?> <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('F jS, Y') ?> <?php _e('at');?> <?php comment_time() ?></a> <?php _e('Said&#58;'); ?> <?php edit_comment_link('Edit Comment','',''); ?>
+<strong><?php comment_author_link() ?></strong> @ <a href="#comment-<?php comment_ID() ?>" title=""><?php comment_date('Y/m/d H:i:s') ?></a> <?php edit_comment_link('Edit Comment','',''); ?>
  		<?php if ($comment->comment_approved == '0') : ?>
 		<em><?php _e('Your comment is awaiting moderation.'); ?></em>
  		<?php endif; ?>
@@ -60,7 +60,7 @@ $oddcomment = 'alt';
 
 <?php if ('open' == $post->comment_status) : ?>
 
-		<h3 id="respond">Leave a Reply</h3>
+		<h3 id="respond" class="bottom_border">Leave a Reply</h3>
 
 <?php if ( get_option('comment_registration') && !$user_ID ) : ?>
 <p>You must be <a href="<?php echo get_option('siteurl'); ?>/wp-login.php?redirect_to=<?php the_permalink(); ?>">logged in</a> to post a comment.</p>
@@ -92,8 +92,6 @@ $oddcomment = 'alt';
 <p><input name="submit" type="submit" id="submit" tabindex="5" value="Submit Comment" />
 <input type="hidden" name="comment_post_ID" value="<?php echo $id; ?>" />
 </p>
-
-<?php do_action('comment_form', $post->ID); ?>
 
 </form>
 
