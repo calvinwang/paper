@@ -22,7 +22,7 @@ $oddcomment = 'alt';
 			<?php if ( $user_ID ) : ?>
 				<?php global $current_user; get_currentuserinfo(); echo get_avatar( $current_user->ID, 32 ); ?>
 			<?php else : ?>
-				<input type="text" name="author" id="author" class="input_text" value="<?php echo $comment_author; ?>" tabindex="1" placeholder="Name" /><input type="text" name="email" id="email" class="input_text" value="<?php echo $comment_author_email; ?>" tabindex="2" placeholder="Mail (will not be published)" />
+				<input type="text" name="author" id="author" class="input_text" value="<?php echo $comment_author; ?>" tabindex="1" placeholder="Name" /><input type="text" name="email" id="email" class="input_text" value="<?php echo $comment_author_email; ?>" tabindex="2" placeholder="Email" />
 			<?php endif; ?>
 			<textarea name="comment" id="comment" class="input_text" tabindex="4"></textarea>
 			<input name="submit" type="submit" id="submit" tabindex="5" value="Submit" />
