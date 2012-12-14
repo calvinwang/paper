@@ -15,13 +15,13 @@ body {
 	font-family: "Helvetica Neue", Helvetica, "Microsoft YaHei", "\5FAE\8F6F\96C5\9ED1", Arial, sans-serif;
 	font-size: 18px;
 	background: #FFFFFF;
-	color: #666666;
+	color: #333333;
 }
 
 body, h1, h2, h3, h4, h5, h6, blockquote, p, form {
 	margin: 0;
 	padding: 0;
-	font-weight: lighter;
+	font-weight: 200;
 }
 
 h1 {
@@ -52,6 +52,15 @@ p {
 	margin: 0 0 20px;
 	padding: 0 0 20px;
 	border-bottom: 1px solid #E5E5E5;
+}
+
+.input_text {
+	border: 1px solid #E5E5E5;
+	padding: 5px;
+}
+
+.input_text:focus {
+	border: 1px solid #CCCCCC;
 }
 
 /*
@@ -109,6 +118,10 @@ p {
 ----- comments -----
 */
 
+.comments {
+	color: #666666;
+}
+
 .commentmetadata {
 	margin: 0 0 5px;
 }
@@ -117,10 +130,57 @@ p {
 	font-size: 14px;
 	line-height: 20px;
 	margin: 0 0 60px;
+	padding: 0 0 0 50px;
 }
 
 .commentlist li {
 	margin: 0 0 20px;
+}
+
+#commentform img {
+	position: absolute;
+}
+
+#author, #email {
+	width: 245px;
+}
+
+#author {
+	margin: 0 0 15px 50px;
+}
+
+#email {
+	margin: 0 0 15px 15px;
+}
+
+#commentform {
+	margin: 0 0 30px;
+}
+
+#commentform textarea {
+	width: 518px;
+	height: 40px;
+	margin: 0 0 15px 50px;
+}
+
+#commentform textarea:focus {
+	height: 70px;
+}
+
+#submit {
+	width: 80px;
+	margin: 0 0 15px 500px;
+	background: #EEEEEE;
+	padding: 5px 0;
+	border: none;
+	color: #999999;
+	cursor: pointer;
+	border-radius: 2px;
+}
+
+#submit:hover {
+	background: #CC0000;
+	color: #FFFFFF;
 }
 
 /*
@@ -144,6 +204,7 @@ p {
 
 .navi a:hover {
 	background: #EEEEEE;
+	color: #CC0000;
 	border-radius: 2px;
 }
 
