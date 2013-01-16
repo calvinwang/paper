@@ -54,27 +54,6 @@ p {
 	border-bottom: 1px solid #E5E5E5;
 }
 
-.input_text {
-	border: 1px solid #E5E5E5;
-	padding: 5px;
-}
-
-.input_text:focus {
-	border: 1px solid #CCCCCC;
-}
-
-input::-webkit-input-placeholder {
-	color: #AAAAAA;
-}
-
-input:-moz-placeholder {
-	color: #AAAAAA;
-}
-
-input:-ms-input-placeholder {
-	color: #AAAAAA;
-}
-
 /*
 ----- header -----
 */
@@ -134,71 +113,6 @@ input:-ms-input-placeholder {
 }
 
 /*
------ comments -----
-*/
-
-.comments {
-	color: #666666;
-}
-
-.commentmetadata {
-	margin: 0 0 5px;
-}
-
-.commentlist {
-	font-size: 14px;
-	line-height: 20px;
-	margin: 0 0 60px;
-	padding: 0 0 0 50px;
-}
-
-.commentlist li {
-	margin: 0 0 20px;
-}
-
-#commentform img {
-	position: absolute;
-}
-
-#author, #email {
-	width: 245px;
-}
-
-#author {
-	margin: 0 0 15px 50px;
-}
-
-#email {
-	margin: 0 0 15px 15px;
-}
-
-#commentform {
-	margin: 0 0 30px;
-}
-
-#commentform textarea {
-	width: 518px;
-	height: 50px;
-	margin: 0 0 15px 50px;
-}
-
-#submit {
-	width: 80px;
-	margin: 0 0 15px 500px;
-	background: #EEEEEE;
-	padding: 5px 0;
-	border: none;
-	color: #999999;
-	cursor: pointer;
-	border-radius: 2px;
-}
-
-#submit:hover {
-	background: #CC0000;
-	color: #FFFFFF;
-}
-
-/*
 ----- navi -----
 */
 
@@ -231,6 +145,11 @@ input:-ms-input-placeholder {
 	padding: 10px 0;
 	color: #BBBBBB;
 	border-top: 1px solid #E5E5E5;
+}
+
+#footer p {
+	font-size: 14px;
+	text-align: center;
 }
 
 /*

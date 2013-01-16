@@ -1,5 +1,5 @@
 		<div id="footer">
-			<p>Copyright &#169; 2012 <?php bloginfo("name"); ?></p>
+			<p>Copyright &#169; 2009 - <?php echo date("Y") ?> <?php bloginfo("name"); ?></p>
 		</div>
 
 	</div>

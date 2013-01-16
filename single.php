@@ -17,10 +17,6 @@
 				<div class="navi clearfix">
 					<div class="next"><?php previous_post_link('%link', '下一篇：%title &#8594;') ?></div>
 				</div>
-
-				<div class='comments'>
-					<?php $withcomments = true; comments_template(); ?>
-				</div>
 			</div>
 		<?php endwhile; ?>
 	<?php else : ?>
