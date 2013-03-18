@@ -44,8 +44,14 @@ p {
 #wrapper {
 	margin: 0 auto;
 	padding: 0 30px;
-	width: 580px;
+	width: 85%;
+	max-width: 580px;
 	text-align: left;
+}
+
+#wrapper img {
+	width: 85%;
+	height: 85%;
 }
 
 .bottom_border {
@@ -72,12 +78,6 @@ p {
 	float: right;
 	border-radius: 0 0 2px 2px;
 	margin: 0 0 20px;
-}
-
-#logo:hover {
-	padding: 15px 0 10px;
-	margin: 0 0 15px;
-	text-decoration: none;
 }
 
 /*
