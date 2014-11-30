@@ -4,10 +4,10 @@
 Redirect To First Post
 */
 
-if (have_posts()) {
-	while (have_posts()) {
-		the_post();
-		wp_redirect(get_permalink());
-	}
+$args = array( 'numberposts' => '1');
+$recent_posts = wp_get_recent_posts( $args );
+foreach( $recent_posts as $recent ){
+wp_redirect(get_permalink($recent["ID"]));
 }
+
 ?>
