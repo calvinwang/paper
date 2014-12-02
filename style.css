@@ -2,7 +2,7 @@
 Theme Name: Paper
 Theme URI: http://www.calvinwang.com/
 Description: A clean WordPress theme.
-Version: 1.0
+Version: 1.2
 Author: Calvin Wang
 Author URI: http://www.calvinwang.com/
 */
@@ -43,7 +43,6 @@ p {
 
 #wrapper {
 	margin: 0 auto;
-	padding: 0 30px;
 	width: 85%;
 	max-width: 580px;
 	text-align: left;
@@ -66,6 +65,7 @@ p {
 
 #header {
 	margin: 0 0 40px;
+	position: relative;
 }
 
 #logo {
@@ -77,7 +77,19 @@ p {
 	padding: 10px 0;
 	float: right;
 	border-radius: 0 0 2px 2px;
-	margin: 0 0 20px;
+	margin: 0 0 10px;
+}
+
+#logo:after {
+	content: "";
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 10px 90px 0 90px;
+	border-color: #cc0000 transparent;
 }
 
 /*
@@ -96,6 +108,7 @@ p {
 .post h2 {
 	font-size: 24px;
 	margin: 0 0 10px;
+	color: #CC0000;
 }
 
 .post .date {
@@ -142,7 +155,7 @@ p {
 */
 
 #footer {
-	padding: 10px 0;
+	padding: 30px 0;
 	color: #BBBBBB;
 	border-top: 1px solid #E5E5E5;
 }
@@ -167,4 +180,18 @@ p {
 
 .clearfix {
 	zoom: 1
+}
+
+/*
+----- viewport -----
+*/
+
+@viewport{
+    zoom: 1.0;
+    width: extend-to-zoom;
+}
+
+@-ms-viewport{
+    width: extend-to-zoom;
+    zoom: 1.0;
 }

@@ -4,13 +4,10 @@
 	<?php if(have_posts()) : ?>
 		<?php while(have_posts()) : the_post(); ?>
 			<div class="post" id="post-<?php the_ID(); ?>">
-				<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+				<h2><?php the_title(); ?></h2>
+				<p class="date"><?php the_time('F j, Y') ?></p>
 				<div class="entry">
 					<?php the_content(); ?>
-					<p class="postmetadata">
-						<?php link_pages("<p><code>Pages:</strong>", "</p>", "number"); ?>
-						<?php edit_post_link("Edit", "<p>", "</p>"); ?>
-					</p>
 				</div>
 			</div>
 		<?php endwhile; ?>

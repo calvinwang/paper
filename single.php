@@ -8,7 +8,7 @@
 					<div class="previous"><?php next_post_link('%link', '&#8592; 上一篇：%title') ?></div>
 				</div>
 
-				<h2><a href="<?php the_permalink(); ?>" title="<?php the_title(); ?>"><?php the_title(); ?></a></h2>
+				<h2><?php the_title(); ?></h2>
 				<p class="date"><?php the_time('F j, Y') ?></p>
 				<div class="entry">
 					<?php the_content(); ?>
